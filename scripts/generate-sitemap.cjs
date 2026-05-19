@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const distDir = path.resolve(__dirname, '..', 'dist');
+const distDir = path.resolve(__dirname, '..', 'dist', 'client');
 
 const entries = [
   { path: '/', priority: '1.0', changefreq: 'weekly' },

@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
-    "vercel-build": "vite build",
-    "postbuild": "rm -rf dist_static && mkdir -p dist_static && cp -r dist/client/* dist_static/ && rm -rf dist && mv dist_static dist && node ./scripts/generate-index.cjs && node ./scripts/generate-sitemap.cjs",
+    "build": "vite build && rm -f dist/client/index.html && node ./scripts/generate-sitemap.cjs",
+    "vercel-build": "vite build && rm -f dist/client/index.html && node ./scripts/generate-sitemap.cjs",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
