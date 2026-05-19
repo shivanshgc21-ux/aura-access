@@ -18,13 +18,13 @@ import accessImg from "@/assets/product-access-control.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Helix Automation — Premium Traffic & Access Automation" },
+      { title: "Miturtle — Premium Traffic & Access Automation" },
       {
         name: "description",
         content:
           "Engineered boom barriers, sliding gate motors and access control systems. Innovate · Integrate · Inspire.",
       },
-      { property: "og:title", content: "Helix Automation" },
+      { property: "og:title", content: "Miturtle" },
       {
         property: "og:description",
         content: "Luxury industrial traffic automation systems.",
@@ -145,14 +145,14 @@ function Intro() {
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-28 grid lg:grid-cols-12 gap-12">
       <div className="lg:col-span-5">
-        <p className="eyebrow">About Helix</p>
+        <p className="eyebrow">About Miturtle</p>
         <h2 className="mt-4 font-display text-4xl sm:text-5xl leading-[1] text-balance">
           A quieter way to <em className="text-primary not-italic">move people</em> and vehicles.
         </h2>
       </div>
       <div className="lg:col-span-6 lg:col-start-7 space-y-6 text-muted-foreground text-pretty">
         <p className="text-lg leading-relaxed">
-          Helix Automation designs and deploys traffic automation hardware that
+          Miturtle designs and deploys traffic automation hardware that
           disappears into the architecture. From the discreet hum of a high-cycle
           boom barrier to the precision of a biometric reader, every surface is
           considered.
@@ -242,7 +242,7 @@ function ProductHighlights() {
     {
       img: gateImg,
       tag: "02 / Sliding gate motor",
-      title: "Helix SG-2200",
+      title: "Miturtle SG-2200",
       body: "Up to 2,200 kg gate load. Soft start, encoder feedback, anti-crush.",
     },
     {
@@ -304,13 +304,13 @@ function WhyUs() {
     { k: "03", t: "Architectural finish", b: "Cabinet finishes color-matched to your brand or facade." },
     { k: "04", t: "Open integrations", b: "Wiegand, OSDP, Modbus, MQTT, REST — your stack, our hardware." },
     { k: "05", t: "High-cycle hardware", b: "Barriers tested to 5M cycles, motors to 1M operations." },
-    { k: "06", t: "Real-time visibility", b: "Helix Live dashboard — telemetry, alarms, audit trail." },
+    { k: "06", t: "Real-time visibility", b: "Miturtle Live dashboard — telemetry, alarms, audit trail." },
   ];
   return (
     <section className="bg-[color:var(--surface)]/40 border-y border-white/5 py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <p className="eyebrow">Why Helix</p>
+          <p className="eyebrow">Why Miturtle</p>
           <h2 className="mt-4 font-display text-4xl sm:text-5xl leading-[1] text-balance">
             Specified by people who actually run the building.
           </h2>
@@ -332,12 +332,12 @@ function WhyUs() {
 
 function Testimonials() {
   const quotes = [
-    {
-      q: "The barriers have run flawlessly across two monsoons. Helix's commissioning crew was the most disciplined we've worked with.",
+      {
+      q: "The barriers have run flawlessly across two monsoons. Miturtle's commissioning crew was the most disciplined we've worked with.",
       a: "Facilities Director · Class-A office tower, Bengaluru",
     },
     {
-      q: "We replaced three vendors with Helix. One number to call, one dashboard, one SLA. That's the value.",
+      q: "We replaced three vendors with Miturtle. One number to call, one dashboard, one SLA. That's the value.",
       a: "Head of Security · Hospitality group, UAE",
     },
     {

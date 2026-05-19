@@ -5,6 +5,7 @@ import { ArrowUpRight, Check } from "lucide-react";
 import boomImg from "@/assets/product-boom-barrier.jpg";
 import gateImg from "@/assets/product-sliding-gate.jpg";
 import accessImg from "@/assets/product-access-control.jpg";
+import heroImg from "@/assets/hero-boom-barrier.jpg";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -15,7 +16,7 @@ export const Route = createFileRoute("/products")({
         content:
           "Premium boom barriers, sliding gate motors and RFID/biometric access control engineered for high-cycle operation.",
       },
-      { property: "og:title", content: "Products — Helix Automation" },
+      { property: "og:title", content: "Products — Miturtle" },
       { property: "og:description", content: "Three product pillars, one control plane." },
       { property: "og:url", content: "/products" },
     ],
@@ -44,7 +45,7 @@ const products = [
   {
     id: "sliding-gate",
     tag: "02 — Sliding Gate Motor",
-    name: "Helix SG-2200",
+    name: "Miturtle SG-2200",
     img: gateImg,
     body: "Heavy-duty sliding gate operators for industrial perimeters and logistics yards. Encoder feedback, anti-crush, battery backup.",
     specs: [
@@ -85,7 +86,8 @@ function ProductsPage() {
             Three pillars. <em className="text-primary not-italic">One control plane.</em>
           </>
         }
-        subtitle="Every product talks to Helix Live — our unified telemetry and audit dashboard. Specify them individually, or as a stack."
+        subtitle="Every product talks to Miturtle Live — our unified telemetry and audit dashboard. Specify them individually, or as a stack."
+        bgImage={heroImg}
       />
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 space-y-28">

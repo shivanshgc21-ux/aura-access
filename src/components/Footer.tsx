@@ -11,7 +11,7 @@ export function Footer() {
             <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-primary/15 ring-1 ring-primary/30">
               <span className="block h-3 w-3 rounded-sm bg-primary" />
             </span>
-            <span className="font-display text-2xl">Helix Automation</span>
+            <span className="font-display text-2xl">Miturtle</span>
           </Link>
           <p className="mt-5 text-sm text-muted-foreground max-w-md text-pretty">
             Premium traffic automation and access control systems engineered for
@@ -63,10 +63,10 @@ export function Footer() {
             <li className="flex items-center gap-3">
               <Mail className="h-4 w-4 text-primary" />
               <a
-                href="mailto:hello@helix-automation.com"
+                href="mailto:hello@miturtle.com"
                 className="hover:text-foreground"
               >
-                hello@helix-automation.com
+                hello@miturtle.com
               </a>
             </li>
           </ul>
@@ -75,7 +75,7 @@ export function Footer() {
 
       <div className="border-t border-white/5">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Helix Automation. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Miturtle. All rights reserved.</p>
           <p>Engineered in India · Deployed worldwide</p>
         </div>
       </div>

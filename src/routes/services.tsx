@@ -6,13 +6,13 @@ import { ArrowUpRight, Wrench, ClipboardList, Headset, Plug, Map, ShieldCheck } 
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Helix Automation" },
+      { title: "Services — Miturtle" },
       {
         name: "description",
         content:
           "Site surveys, supply, installation, AMC and 24/7 support for boom barriers, gate motors and access control.",
       },
-      { property: "og:title", content: "Services — Helix Automation" },
+      { property: "og:title", content: "Services — Miturtle" },
       { property: "og:description", content: "End-to-end traffic automation services." },
       { property: "og:url", content: "/services" },
     ],
@@ -41,7 +41,7 @@ function ServicesPage() {
             <br /> One number to call.
           </>
         }
-        subtitle="From the first survey to the last spare part — Helix is accountable for the lifecycle, not just the box you bought."
+        subtitle="From the first survey to the last spare part — Miturtle is accountable for the lifecycle, not just the box you bought."
       />
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
@@ -66,7 +66,7 @@ function ServicesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="eyebrow">Process</p>
           <h2 className="mt-4 font-display text-4xl sm:text-5xl leading-[1] text-balance max-w-3xl">
-            How a Helix deployment actually runs.
+            How a Miturtle deployment actually runs.
           </h2>
 
           <ol className="mt-14 grid md:grid-cols-4 gap-px bg-white/5 rounded-2xl overflow-hidden">

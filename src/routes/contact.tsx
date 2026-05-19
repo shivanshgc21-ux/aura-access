@@ -8,13 +8,13 @@ import { z } from "zod";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Helix Automation" },
+    { title: "Contact — Miturtle" },
       {
         name: "description",
         content:
           "Request a site survey, datasheet or quote. We respond within one business day.",
       },
-      { property: "og:title", content: "Contact — Helix Automation" },
+      { property: "og:title", content: "Contact — Miturtle" },
       { property: "og:description", content: "Request a survey or quote." },
       { property: "og:url", content: "/contact" },
     ],
@@ -70,7 +70,7 @@ function ContactPage() {
           {[
             { Icon: MapPin, t: "Visit", b: "Tower B, Industrial Park\nSector 18, Gurugram 122015" },
             { Icon: Phone, t: "Call", b: "+91 99999 99999\nMon–Sat · 09:00 – 19:00 IST" },
-            { Icon: Mail, t: "Write", b: "hello@helix-automation.com\nsupport@helix-automation.com" },
+            { Icon: Mail, t: "Write", b: "hello@miturtle.com\nsupport@miturtle.com" },
           ].map(({ Icon, t, b }) => (
             <div key={t} className="glass rounded-2xl p-6">
               <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15 ring-1 ring-primary/30">

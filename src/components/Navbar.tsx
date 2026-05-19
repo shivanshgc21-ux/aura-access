@@ -42,7 +42,7 @@ export function Navbar() {
               <span className="block h-3 w-3 rounded-sm bg-primary shadow-glow" />
             </span>
             <span className="font-display text-xl tracking-tight">
-              Helix<span className="text-primary">.</span>
+              Miturtle<span className="text-primary">.</span>
             </span>
           </Link>
 

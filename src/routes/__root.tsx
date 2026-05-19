@@ -66,22 +66,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Helix Automation — Traffic & Access Control Systems" },
+      { title: "Miturtle — Traffic & Access Control Systems" },
       {
         name: "description",
         content:
           "Premium boom barriers, sliding gate motors and access control for corporate, hospitality and high-security facilities. Innovate · Integrate · Inspire.",
       },
-      { name: "author", content: "Helix Automation" },
+      { name: "author", content: "Miturtle" },
       { name: "theme-color", content: "#0b1224" },
-      { property: "og:title", content: "Helix Automation" },
+      { property: "og:title", content: "Miturtle" },
       {
         property: "og:description",
         content:
           "Luxury industrial traffic automation — boom barriers, sliding gate motors, access control.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Helix Automation" },
+      { property: "og:site_name", content: "Miturtle" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

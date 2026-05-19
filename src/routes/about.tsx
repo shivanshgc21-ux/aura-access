@@ -6,13 +6,13 @@ import { ArrowUpRight } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Helix Automation" },
+      { title: "About — Miturtle" },
       {
         name: "description",
         content:
-          "Helix Automation engineers premium boom barriers, gate motors and access control. Innovate · Integrate · Inspire.",
+          "Miturtle engineers premium boom barriers, gate motors and access control. Innovate · Integrate · Inspire.",
       },
-      { property: "og:title", content: "About — Helix Automation" },
+      { property: "og:title", content: "About — Miturtle" },
       { property: "og:description", content: "Our story, mission and engineering principles." },
       { property: "og:url", content: "/about" },
     ],
@@ -33,7 +33,7 @@ function AboutPage() {
             <em className="text-primary not-italic">precise</em> infrastructure.
           </>
         }
-        subtitle="Helix Automation builds traffic automation hardware that disappears into the architecture — and a service operation that doesn't disappear when you need it."
+        subtitle="Miturtle builds traffic automation hardware that disappears into the architecture — and a service operation that doesn't disappear when you need it."
       />
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 grid lg:grid-cols-12 gap-12">

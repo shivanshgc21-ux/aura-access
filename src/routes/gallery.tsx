@@ -13,13 +13,13 @@ import hotelImg from "@/assets/gallery-boom-hotel.jpg";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — Helix Automation Installations" },
+      { title: "Gallery — Miturtle Installations" },
       {
         name: "description",
         content:
           "Selected installations: parking, hospitality, industrial perimeters and smart offices.",
       },
-      { property: "og:title", content: "Gallery — Helix Automation" },
+      { property: "og:title", content: "Gallery — Miturtle" },
       { property: "og:description", content: "Selected installations." },
       { property: "og:url", content: "/gallery" },
     ],
@@ -50,6 +50,7 @@ function GalleryPage() {
           </>
         }
         subtitle="A small sample of deployments across India and the Gulf — parking, hospitality, industrial and smart-office environments."
+        bgImage={heroImg}
       />
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
