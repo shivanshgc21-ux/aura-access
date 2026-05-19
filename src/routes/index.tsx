@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import {
   ArrowRight,
@@ -15,26 +15,9 @@ import boomImg from "@/assets/product-boom-barrier.jpg";
 import gateImg from "@/assets/product-sliding-gate.jpg";
 import accessImg from "@/assets/product-access-control.jpg";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Miturtle — Premium Traffic & Access Automation" },
-      {
-        name: "description",
-        content:
-          "Engineered boom barriers, sliding gate motors and access control systems. Innovate · Integrate · Inspire.",
-      },
-      { property: "og:title", content: "Miturtle" },
-      {
-        property: "og:description",
-        content: "Luxury industrial traffic automation systems.",
-      },
-      { property: "og:url", content: "/" },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-  }),
-  component: Home,
-});
+export default function HomeRouteWrapper() {
+  return <Home />;
+}
 
 function Home() {
   return (

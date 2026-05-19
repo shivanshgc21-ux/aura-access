@@ -1,25 +1,11 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
 import { ArrowUpRight, Wrench, ClipboardList, Headset, Plug, Map, ShieldCheck } from "lucide-react";
 
-export const Route = createFileRoute("/services")({
-  head: () => ({
-    meta: [
-      { title: "Services — Miturtle" },
-      {
-        name: "description",
-        content:
-          "Site surveys, supply, installation, AMC and 24/7 support for boom barriers, gate motors and access control.",
-      },
-      { property: "og:title", content: "Services — Miturtle" },
-      { property: "og:description", content: "End-to-end traffic automation services." },
-      { property: "og:url", content: "/services" },
-    ],
-    links: [{ rel: "canonical", href: "/services" }],
-  }),
-  component: ServicesPage,
-});
+export default function ServicesRouteWrapper() {
+  return <ServicesPage />;
+}
 
 const services = [
   { icon: Map, t: "Site survey & design", b: "Free on-site assessment. CAD layouts, traffic flow modelling and BOQ within 48 hours." },

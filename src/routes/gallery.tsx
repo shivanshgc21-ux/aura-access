@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
 import heroImg from "@/assets/hero-boom-barrier.jpg";
@@ -10,23 +9,9 @@ import bioImg from "@/assets/gallery-biometric.jpg";
 import slidingImg from "@/assets/gallery-sliding-gate.jpg";
 import hotelImg from "@/assets/gallery-boom-hotel.jpg";
 
-export const Route = createFileRoute("/gallery")({
-  head: () => ({
-    meta: [
-      { title: "Gallery — Miturtle Installations" },
-      {
-        name: "description",
-        content:
-          "Selected installations: parking, hospitality, industrial perimeters and smart offices.",
-      },
-      { property: "og:title", content: "Gallery — Miturtle" },
-      { property: "og:description", content: "Selected installations." },
-      { property: "og:url", content: "/gallery" },
-    ],
-    links: [{ rel: "canonical", href: "/gallery" }],
-  }),
-  component: GalleryPage,
-});
+export default function GalleryRouteWrapper() {
+  return <GalleryPage />;
+}
 
 const items = [
   { img: heroImg, t: "Corporate parking · Bengaluru", c: "Boom Barrier" },

@@ -1,27 +1,13 @@
-import { createFileRoute } from "@tanstack/react-router";
+import type { FormEvent } from "react";
+import { useState } from "react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
-import { useState } from "react";
 import { Mail, Phone, MapPin, Check, ArrowRight } from "lucide-react";
 import { z } from "zod";
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-    { title: "Contact — Miturtle" },
-      {
-        name: "description",
-        content:
-          "Request a site survey, datasheet or quote. We respond within one business day.",
-      },
-      { property: "og:title", content: "Contact — Miturtle" },
-      { property: "og:description", content: "Request a survey or quote." },
-      { property: "og:url", content: "/contact" },
-    ],
-    links: [{ rel: "canonical", href: "/contact" }],
-  }),
-  component: ContactPage,
-});
+export default function ContactRouteWrapper() {
+  return <ContactPage />;
+}
 
 const schema = z.object({
   name: z.string().trim().min(2, "Please enter your name").max(80),
@@ -36,7 +22,7 @@ function ContactPage() {
   const [sent, setSent] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
     const data = Object.fromEntries(fd) as Record<string, string>;

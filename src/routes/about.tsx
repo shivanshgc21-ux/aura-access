@@ -1,25 +1,11 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
 import { ArrowUpRight } from "lucide-react";
 
-export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About — Miturtle" },
-      {
-        name: "description",
-        content:
-          "Miturtle engineers premium boom barriers, gate motors and access control. Innovate · Integrate · Inspire.",
-      },
-      { property: "og:title", content: "About — Miturtle" },
-      { property: "og:description", content: "Our story, mission and engineering principles." },
-      { property: "og:url", content: "/about" },
-    ],
-    links: [{ rel: "canonical", href: "/about" }],
-  }),
-  component: AboutPage,
-});
+export default function AboutRouteWrapper() {
+  return <AboutPage />;
+}
 
 function AboutPage() {
   return (

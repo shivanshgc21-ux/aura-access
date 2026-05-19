@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
 import { ArrowUpRight, Check } from "lucide-react";
@@ -7,23 +7,9 @@ import gateImg from "@/assets/product-sliding-gate.jpg";
 import accessImg from "@/assets/product-access-control.jpg";
 import heroImg from "@/assets/hero-boom-barrier.jpg";
 
-export const Route = createFileRoute("/products")({
-  head: () => ({
-    meta: [
-      { title: "Products — Boom Barriers, Gate Motors, Access Control" },
-      {
-        name: "description",
-        content:
-          "Premium boom barriers, sliding gate motors and RFID/biometric access control engineered for high-cycle operation.",
-      },
-      { property: "og:title", content: "Products — Miturtle" },
-      { property: "og:description", content: "Three product pillars, one control plane." },
-      { property: "og:url", content: "/products" },
-    ],
-    links: [{ rel: "canonical", href: "/products" }],
-  }),
-  component: ProductsPage,
-});
+export default function ProductsRouteWrapper() {
+  return <ProductsPage />;
+}
 
 const products = [
   {
@@ -92,15 +78,9 @@ function ProductsPage() {
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 space-y-28">
         {products.map((p, i) => (
-          <article
-            key={p.id}
-            id={p.id}
-            className="grid lg:grid-cols-12 gap-10 items-center"
-          >
+          <article key={p.id} id={p.id} className="grid lg:grid-cols-12 gap-10 items-center">
             <div
-              className={`lg:col-span-7 ${
-                i % 2 === 1 ? "lg:order-2" : ""
-              } relative rounded-3xl overflow-hidden glass shadow-elevated`}
+              className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2" : ""} relative rounded-3xl overflow-hidden glass shadow-elevated`}
             >
               <img
                 src={p.img}
@@ -113,9 +93,7 @@ function ProductsPage() {
             </div>
             <div className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
               <p className="text-xs uppercase tracking-[0.22em] text-primary">{p.tag}</p>
-              <h2 className="mt-3 font-display text-4xl sm:text-5xl leading-[1] text-balance">
-                {p.name}
-              </h2>
+              <h2 className="mt-3 font-display text-4xl sm:text-5xl leading-[1] text-balance">{p.name}</h2>
               <p className="mt-5 text-muted-foreground text-pretty">{p.body}</p>
 
               <dl className="mt-8 grid grid-cols-2 gap-px bg-white/5 rounded-xl overflow-hidden">
@@ -129,10 +107,7 @@ function ProductsPage() {
 
               <ul className="mt-6 flex flex-wrap gap-2">
                 {p.uses.map((u) => (
-                  <li
-                    key={u}
-                    className="inline-flex items-center gap-1.5 rounded-full glass px-3 py-1 text-xs text-muted-foreground"
-                  >
+                  <li key={u} className="inline-flex items-center gap-1.5 rounded-full glass px-3 py-1 text-xs text-muted-foreground">
                     <Check className="h-3 w-3 text-primary" /> {u}
                   </li>
                 ))}
